@@ -1,5 +1,3 @@
-$fn=50
-
 intersection(){
    square(5);
    difference(){
