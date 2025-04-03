@@ -1,13 +1,17 @@
 $fn=50;
 
-//rotate_extrude(convexity = 10)
-linear_extrude(10)
-translate([2.5,0,0]) {
- intersection(){
-   circle(5);
-   difference(){
-      circle(5,center=true);
-      translate([2.5,2.5]) circle(2.5);
+topR=21;
+bottomR=11;
+brimW=3;
+thik=2;
+ht=15;
+
+difference(){
+   union() {
+      cylender(ht,r1=bottomR + thik, r2=topR + thik);
+      
+      translate([0,0,ht-thik])
+         cylender(thik,r=topR + brimW);
    }
-  }
+   cylender(ht+tk,r1=bottomR, r2=topR);
 }
