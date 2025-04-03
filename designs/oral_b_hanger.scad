@@ -4,7 +4,7 @@ $fn=50;
 linear_extrude(10)
 translate([2.5,0,0]) {
  intersection(){
-   square(5);
+   circle(5);
    difference(){
       circle(5,center=true);
       translate([2.5,2.5]) circle(2.5);
