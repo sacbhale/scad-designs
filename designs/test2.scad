@@ -5,3 +5,4 @@ module halfpyramid(base, height) {
 }
 
 halfpyramid(20, 10);
+halfpyramid(40, 40);
