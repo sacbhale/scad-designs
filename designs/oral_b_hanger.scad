@@ -6,15 +6,12 @@ brimW=3;
 thik=2;
 ht=15;
 
-
-cylender(ht,r1=bottomR + thik, r2=topR + thik);
-
 difference(){
    union() {
-      cylender(ht,r1=bottomR + thik, r2=topR + thik);
+      cylinder(ht,r1=bottomR + thik, r2=topR + thik);
       
       translate([0,0,ht-thik])
-         cylender(thik,r=topR + brimW);
+         cylinder(thik,r=topR + brimW);
    }
-   cylender(ht+tk,r1=bottomR, r2=topR);
+   cylinder(ht+tk,r1=bottomR, r2=topR);
 }
