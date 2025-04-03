@@ -13,5 +13,6 @@ difference(){
       translate([0,0,ht-thik])
          cylinder(thik,r=topR + brimW);
    }
-   cylinder(ht+tk,r1=bottomR, r2=topR);
+   translate ([0,0,-.02]) 
+      cylinder(ht+.05,r1=bottomR, r2=topR);
 }
