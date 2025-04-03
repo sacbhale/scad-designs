@@ -1,3 +1,4 @@
+$fn=50
 
 rotate_extrude(convexity = 10)
 translate([2.5,0,0]) {
