@@ -6,6 +6,9 @@ brimW=3;
 thik=2;
 ht=15;
 
+
+cylender(ht,r1=bottomR + thik, r2=topR + thik);
+
 difference(){
    union() {
       cylender(ht,r1=bottomR + thik, r2=topR + thik);
